@@ -1,9 +1,9 @@
-<p id="notice"><%= notice %></p>
 
-<p>
+
+<h1>
   <strong>Name:</strong>
   <%= @restaurant.name %>
-</p>
+</h1>
 
 <p>
   <strong>Address:</strong>
@@ -15,5 +15,13 @@
   <%= @restaurant.category %>
 </p>
 
-<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+<ul>
+  <% @restaurant.reviews.each do |review| %>
+  <li>
+    <%= review.content %>
+  </li>
+  <%end%>
+</ul>
+<%= link_to 'Add review', new_restaurant_review_path(@restaurant) %>
+<%= link_to 'Edit', edit_restaurant_path(@restaurant) %>
 <%= link_to 'Back', restaurants_path %>

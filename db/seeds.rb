@@ -13,13 +13,13 @@ restaurants_attributes = [
  {
       name: "La Tour d'Argent",
       address: "15 Quai de la Tournelle, 75005 Paris",
-      phone_number: 0143542331,
+      phone_number: 01,
       category: "french"
     },
   {
     name:         'Pizza East',
     address:      '56A Shoreditch High St, London E1 6PQ',
-    phone_number: 01,
+    phone_number: 02,
     category:        "french"
   }
 ]
